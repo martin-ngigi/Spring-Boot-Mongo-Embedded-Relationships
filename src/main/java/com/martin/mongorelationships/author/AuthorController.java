@@ -26,4 +26,9 @@ public class AuthorController {
         return authorRepository.save(author);
     }
 
+    @GetMapping("/get-authors")
+    public List<Author> getAuthors(){
+        return  authorRepository.findAll();
+    }
+
 }
