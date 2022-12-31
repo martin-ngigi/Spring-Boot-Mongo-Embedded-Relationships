@@ -17,13 +17,26 @@ public class Author {
     private Long id;
     private String name;
     private Post[] posts;
+    private Profile profile;
 
     public Author() {
+    }
+
+    public Author(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public Author(Long id, String name, Post[] posts) {
         this.id = id;
         this.name = name;
         this.posts = posts;
+    }
+
+    public Author(Long id, String name, Post[] posts, Profile profile) {
+        this.id = id;
+        this.name = name;
+        this.posts = posts;
+        this.profile = profile;
     }
 }

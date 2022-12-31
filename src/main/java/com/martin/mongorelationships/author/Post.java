@@ -10,10 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "author") //for embedding the author document
 public class Post {
 
-    //Used to generate Long id type
-    public static final String  SEQUENCE_NAME="post_sequence";
-
-    @Id
     private String post_name ;
 
     public Post() {
